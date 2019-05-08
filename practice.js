@@ -143,7 +143,7 @@ uniq(names, function(uniqArr){
 //Code Here 
 function each(arr, cb){
   for(i = 0; i < arr.length; i++){
-    cb(arr[i]);
+    cb(arr[i], i);
   }
 }
 // Do not edit the code below.
@@ -162,7 +162,7 @@ each(names, function(item, indice){
 */
 
 // Code here
-function getIserById(arr, id, cb){
+function getUserById(arr, id, cb){
   for(i = 0; i < arr.length; i++){
     if(arr[i].id === id){
       cb(arr[i]);
